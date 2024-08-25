@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="icon" href="./python.png" type="image/png">
+    <link rel="stylesheet" href="./style.css">
+    <title>Python Game</title>
+    <script src="js/app.js" type="module" defer></script>
+</head>
+
+<body>
+    <main>
+        <section class="instruction">
+            <h1>Instruction</h1>
+            <p>Silahkan perhatikan langkah-langkah berikut :</p>
+            <ol>
+                <li>Masukan Username</li>
+                <li>Jalankan ular dengan tombol W S D A atau tombol panah</li>
+                <li>Kumpulkan score sebanyak banyaknya</li>
+                <li>Lalu silahkan enjoy</li>
+            </ol>
+            <input type="text" name="name" id="name">
+            <button>Play</button>
+        </section>
+        <section class="game-area">
+            <div class="game-detail">
+                <span class="score-detail">Score: 6</span>
+                <span class="title">PYTHON</span>
+                <span class="timer">Time: 0:00:00</span>
+            </div>
+            <article class="snake-area"></article>
+            <div class="rewind-area">
+                <input type="range" min="1" max="5" id="rewind" name="rewind" value=5 />
+                <span><button class="cancel-button">Cancel</button><button class="rewind-button">Rewind</button></span>
+            </div>
+        </section>
+        <section class="game-over">
+            <h1>Game Over</h1>
+            <ul>
+                <li class="time-result"></li>
+                <li class="score"></li>
+                <li class="high-score"></li>
+            </ul>
+            <button>Restart</button>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 100vh;
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.instruction {
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    border: 5px double black;
+    color: #f9f9f9;
+    display: none;
+}
+
+.instruction h1 {
+    margin-bottom: 15px;
+    font-size: 45px;
+}
+
+.instruction p{
+    margin-bottom: 20px;
+}
+
+.instruction ol {
+    padding-left: 20px;
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+.instruction ol li,
+p {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.instruction input {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+    text-align: center;
+}
+
+.instruction button {
+    font-size: 1.5em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: red;
+    border: none;
+    color: white;
+    pointer-events: none;
+}
+
+.game-area {
+    display: none;
+    grid-template-rows: .3fr 1fr 3fr;
+}
+
+.game-detail {
+    padding: 20px;
+    color: blue;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.game-detail .title {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.game-detail span {
+    font-size: 2em;
+    padding: 0 10px;
+    font-family: 'Arial';
+}
+
+.game-detail .timer {
+    text-align: right;
+}
+
+canvas {
+    width: 960px;
+    height: 600px;
+    background-color: darkblue;
+}
+
+.rewind-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.rewind-area{
+    display: flex;
+    flex-direction: column;
+}
+
+.rewind-area input{
+    width: 900px;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.rewind-button, .cancel-button {
+    font-size: 1.7em;
+    padding: 5px 10px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    cursor: pointer;
+    color: white;
+    background: orange;
+    margin: 0 5px;
+}
+
+.cancel-button{
+    display: none;
+}
+
+.game-over {
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    width: 60%;
+    max-height: 400px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    border: 5px double black;
+    color: #f9f9f9;
+    display: none;
+}
+
+.game-over h1 {
+    margin-bottom: 15px;
+    font-size: 45px;
+}
+
+.game-over ul {
+    padding-left: 20px;
+    width: 60%;
+    margin-bottom: 15px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.game-over ul li{
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    list-style: none;
+}
+
+.game-over ul li{
+    padding: 10px 0;
+}
+
+.game-over button {
+    font-size: 1.5em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: red;
+    border: none;
+    color: white;
+}
+
+.rewind-button:hover, .cancel-button:hover{
+    background: #5d96d4;
+}
+
+.rewind-button:active, .cancel-button:active{
+    background: #0069d9;
+}
